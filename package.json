@@ -1,0 +1,28 @@
+{
+  "name": "zeptomail-client",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Typed ZeptoMail API client for Node.js (fetch-native)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "files": ["dist"],
+  "keywords": ["zeptomail", "email", "client", "typescript", "fetch", "api"],
+  "author": "Твоё Имя",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
